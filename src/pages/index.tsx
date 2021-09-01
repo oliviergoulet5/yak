@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import { ChatLayout } from '../common/layouts/ChatLayout'
-import { ChatPane } from '../common/components/ChatPane';
+import { ChatPane } from '../modules/ChatPane';
 import { getUser } from '../api/getUser';
 import { User } from '../types';
 

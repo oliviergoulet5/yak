@@ -1,10 +1,11 @@
-import { getUser } from '../../api/getUser';
-import { UserPortrait } from './UserPortrait';
+import { getUser } from '../../../../api/getUser';
+import { UserPortrait } from '../../../components/UserPortrait';
+
 interface Props {
     userId: number
 }
 
-export function ChatEntry({ userId }: Props) {
+export function Conversation({ userId }: Props) {
     const user = getUser(userId);
 
     if (!user) return null;
